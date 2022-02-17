@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+  background: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg"), #53a2ad;
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: -20%, 120%;
+  background-position-y: 50%, -50%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+main {
+  width: 24rem;
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: white;
+}
+.background-img img {
+  width: 100%;
+}
+.profile-photo {
+  width: 7rem;
+  height: 7rem;
+  /* border: 1px solid black; */
+  margin: auto;
+  margin-top: -4rem;
+}
+.profile-photo img {
+  width: 100%;
+  border-radius: 50%;
+  border: 0.28rem solid white;
+}
+.profile {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.profile-location {
+  justify-self: center;
+}
+.profile-name {
+  justify-self: center;
+  margin-bottom: 0.4rem;
+}
+/* .popularity {
+  display: flex;
+  justify-content: space-evenly;
+}
+.followers,
+.likes,
+.photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+.popularity {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 1px solid gray;
+  padding: 1.2rem;
+}
+.followers,
+.likes,
+.photos {
+  justify-self: center;
+  text-align: center;
+}
+/* margin,padding,font properties and background image */
+.profile-age {
+  font-weight: 500;
+}
