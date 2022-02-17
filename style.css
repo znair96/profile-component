@@ -13,8 +13,9 @@ body {
   background: url("./images/bg-pattern-top.svg"),
     url("./images/bg-pattern-bottom.svg"), #53a2ad;
   background-repeat: no-repeat, no-repeat;
-  background-position-x: -20%, 120%;
-  background-position-y: 50%, -50%;
+  background-size: 70%, 70%;
+  background-position-x: -70%, 158%;
+  background-position-y: 54%, -32%;
 }
 .attribution {
   font-size: 11px;
@@ -24,8 +25,9 @@ body {
   color: hsl(228, 45%, 44%);
 }
 main {
-  width: 24rem;
-  border: 1px solid black;
+  width: 25rem;
+  /* border: 1px solid black; */
+  border-radius: 1rem;
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
@@ -33,10 +35,12 @@ main {
 }
 .background-img img {
   width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 .profile-photo {
-  width: 7rem;
-  height: 7rem;
+  width: 7.5rem;
+  height: 7.5rem;
   /* border: 1px solid black; */
   margin: auto;
   margin-top: -4rem;
@@ -49,16 +53,17 @@ main {
 .profile {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 1.5rem;
-  margin-bottom: 1.2rem;
+  margin-top: 1.6rem;
+  margin-bottom: 2rem;
 }
 
 .profile-location {
   justify-self: center;
+  color: hsl(0, 0%, 59%);
 }
 .profile-name {
   justify-self: center;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
 }
 /* .popularity {
   display: flex;
@@ -74,8 +79,8 @@ main {
 .popularity {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  border-top: 1px solid gray;
-  padding: 1.2rem;
+  border-top: 1.5px solid hsl(0, 4%, 77%);
+  padding: 2rem;
 }
 .followers,
 .likes,
@@ -86,4 +91,23 @@ main {
 /* margin,padding,font properties and background image */
 .profile-age {
   font-weight: 500;
+  color: hsl(0, 0%, 59%);
+}
+.followers p,
+.likes p,
+.photos p {
+  color: hsl(0, 0%, 59%);
+  font-size: 0.85rem;
+  letter-spacing: 0.1rem;
+}
+.followers h3,
+.likes h3,
+.photos h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+@media only screen and (max-width: 600px) {
+  main {
+    width: 20rem;
+  }
 }
